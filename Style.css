@@ -3,7 +3,7 @@
 */
 
 html{
-    font-size: 16px;
+    font-size:20px;
     }
     
 *{
@@ -14,27 +14,27 @@ html{
 
 /*-----------------asezarea centrata pe paginile secundare a logoului---------------------------vvvvvv*/
 figure.nike-logo-main{
-        padding-top:200px;
+        padding-top:100px;
         text-align: center;
 }
 
 figure.adidas-logo-main{
-    padding-top:200px;
+    padding-top:100px;
     text-align: center;
 }
 
 figure.underarmour-logo-main{
-    padding-top:200px;
+    padding-top:100px;
     text-align: center;
 }
 
 figure.reebok-logo-main{
-    padding-top:200px;
+    padding-top:100px;
     text-align: center;
 }
 
 figure.NBA-logo-main{
-    padding-top:200px;
+    padding-top:100px;
     text-align: center;
 }
 
@@ -173,10 +173,15 @@ ul.menu>li:hover{
     overflow:visible;
 }
 /*------------------^^^^^^^^^^^^^^^^^^^^^^^^^6*/
+/*------------------up button------------vvvvvvvvvvvvvvvvvvvvvvv*/
+#upbutton{
+    position: fixed;
+    bottom: 50px;
+    right: 50px; 
+    text-align: center;
+}
 
-
-
-
+/*---------------------------------------^^^^^^^^^^^^^^^^^^^^^^^*/
 /*-------stil footer---vvvvvvvvvv*/
 
 .coloana {
@@ -192,7 +197,9 @@ ul.menu>li:hover{
   }
 
   footer{
-      background-image: url("Main-icons and photos/fundal1.jpg");
-      padding-bottom: 0px;
+        padding-left:40px;
+        padding-top:40px;
+        background-image: url("Main-icons and photos/fundal1.jpg");
+        padding-bottom: 40px;
   }
   /*--------------^^^^^^^^^^^^^^^^^^^^^^*/
