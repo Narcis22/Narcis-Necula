@@ -1,0 +1,198 @@
+
+/*<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+*/
+
+html{
+    font-size: 16px;
+    }
+    
+*{
+    margin:0px;
+    padding:0px;
+    text-indent:0px;
+}
+
+/*-----------------asezarea centrata pe paginile secundare a logoului---------------------------vvvvvv*/
+figure.nike-logo-main{
+        padding-top:200px;
+        text-align: center;
+}
+
+figure.adidas-logo-main{
+    padding-top:200px;
+    text-align: center;
+}
+
+figure.underarmour-logo-main{
+    padding-top:200px;
+    text-align: center;
+}
+
+figure.reebok-logo-main{
+    padding-top:200px;
+    text-align: center;
+}
+
+figure.NBA-logo-main{
+    padding-top:200px;
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------------------------------^^^^^^^^^^*/
+
+main{
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:200px;
+}
+
+/*-------aici fac asezarea cate 2 pe linie a brandurilor----------vvvvvvvv*/
+
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/*--------------------------------------------------------------^^^^^^^^^^^^^^*/
+
+
+/*----imaginea de fundal-----vvvvvv*/
+body{
+    background-image:url("Main-icons and photos/fundal.png");
+}
+/*--------^^^^^^^^^^^^^^^^^^^*/
+
+/*-------------tabelul---------vvvvvvvvvvvvv*/
+
+th,td{
+        border:1px solid black;
+        padding:5px;
+}
+td:empty{
+    padding:20px;
+}
+table{
+    border-collapse:collapse;
+    empty-cells:show;
+}
+/*-------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+/*-------titlul----vvvvvvvvvv*/
+h1{
+    /*position: fixed;*/
+    text-align:center;
+    width:100%;
+    height:150px;
+    background-color:white;
+}
+/*--------^^^^^^^^^^^^^^^^^^^*/
+
+/*---------grid-----------------vvvvvvvvvvvvvvvvvvvvv*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-image:url("Main-icons and photos/fundal.png");
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+  }
+/*-------------------------------^^^^^^^^^^^^^^^^^*/
+
+
+/*-------meniu-------vvvvvvvvvvvvvvvvvvvvvvv*/
+/*nav{
+    width:100%;
+    position:sticky;
+    position:fixed;
+}*/
+nav{
+	width:100%;
+	position: sticky;
+    z-index: 150px;
+    
+  text-align: center;
+}
+ul.menu>li, ul.menu>li>ul.submenu>li{
+    
+    display:block;
+    font-family: Ahelvetica-w01-light, helvetica-w02-light, sans-serif;
+    font-size:1.2rem;
+    font-weight:bold;
+    height:2rem;
+    line-height:2rem;
+    text-align:center;		
+    list-style-type:none;
+    overflow:hidden;
+}
+ul.menu>li{
+ float:left;
+ width:25%;
+ /*height:30px;*/
+}
+ul.submenu>li{
+ width:100%;
+ /*height:30px;*/
+}
+ul.menu>li>a,ul.menu>li>div,ul.submenu>li>a{
+    display:block;
+    height:	100%;
+    text-decoration:none;
+    color:black;
+}
+ul.menu>li a, ul.menu>li div{
+    background:#3bd414;
+    opacity:0.89;
+    border:0.2px;
+    border-color: black;
+}
+
+ul.menu>li>ul.submenu{
+    position:relative;
+    top:0px;
+}
+
+ul.menu>li>a:hover, ul.submenu>li>a:hover{
+    background:yellow;
+    opacity:1.0;
+    /*background:rgb(15, 241, 185);*/
+}
+ul.menu>li:hover{
+    overflow:visible;
+}
+/*------------------^^^^^^^^^^^^^^^^^^^^^^^^^6*/
+
+
+
+
+/*-------stil footer---vvvvvvvvvv*/
+
+.coloana {
+    float: left;
+    width: 30%;
+    padding: 10px;
+  }
+  
+  .rand::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  footer{
+      background-image: url("Main-icons and photos/fundal1.jpg");
+      padding-bottom: 0px;
+  }
+  /*--------------^^^^^^^^^^^^^^^^^^^^^^*/
