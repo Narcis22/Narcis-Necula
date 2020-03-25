@@ -4,7 +4,7 @@
 
 html{
     font-size:20px;
-    }
+}
     
 *{
     margin:0px;
@@ -40,12 +40,6 @@ figure.NBA-logo-main{
 
 /*-------------------------------------------------------------------------------------------------^^^^^^^^^^*/
 
-main{
-    padding-left:10%;
-    padding-right:10%;
-    padding-top:200px;
-}
-
 /*-------aici fac asezarea cate 2 pe linie a brandurilor----------vvvvvvvv*/
 
 .column1 {
@@ -60,6 +54,9 @@ main{
     display: table;
   }
 /*--------------------------------------------------------------^^^^^^^^^^^^^^*/
+
+
+
 
 
 /*----imaginea de fundal-----vvvvvv*/
@@ -187,7 +184,7 @@ ul.menu>li:hover{
 .coloana {
     float: left;
     width: 30%;
-    padding: 10px;
+    padding: 4%;
   }
   
   .rand::after {
@@ -197,9 +194,44 @@ ul.menu>li:hover{
   }
 
   footer{
-        padding-left:40px;
-        padding-top:40px;
+        padding-left:5%;
+        padding-top:5%;
         background-image: url("Main-icons and photos/fundal1.jpg");
-        padding-bottom: 40px;
+        padding-bottom: 5%;
   }
   /*--------------^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+  main{
+    padding-left:2%;
+    padding-right:10%;
+    padding-top:10%;
+    padding-bottom: 5%;
+}
+
+
+/*-------------------------------------------------------test-dummy3------------------------------------------------------------------*/
+div#stanga{
+    background-color: teal;
+    width:20%;
+    opacity: 0.7;
+}
+div#dreapta{
+    width:75%;
+    padding-left: 5%;
+}
+div.coloana{
+    box-sizing:border-box;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+div#container{
+    display:flex;
+}
+/*-----------------------------------------------------------end----------------------------------------------------------------------*/
+
