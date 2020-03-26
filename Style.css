@@ -3,8 +3,8 @@
 */
 
 html{
-    font-size: 16px;
-    }
+    font-size:20px;
+}
     
 *{
     margin:0px;
@@ -14,37 +14,31 @@ html{
 
 /*-----------------asezarea centrata pe paginile secundare a logoului---------------------------vvvvvv*/
 figure.nike-logo-main{
-        padding-top:200px;
+        padding-top:100px;
         text-align: center;
 }
 
 figure.adidas-logo-main{
-    padding-top:200px;
+    padding-top:100px;
     text-align: center;
 }
 
 figure.underarmour-logo-main{
-    padding-top:200px;
+    padding-top:100px;
     text-align: center;
 }
 
 figure.reebok-logo-main{
-    padding-top:200px;
+    padding-top:100px;
     text-align: center;
 }
 
 figure.NBA-logo-main{
-    padding-top:200px;
+    padding-top:100px;
     text-align: center;
 }
 
 /*-------------------------------------------------------------------------------------------------^^^^^^^^^^*/
-
-main{
-    padding-left:10%;
-    padding-right:10%;
-    padding-top:200px;
-}
 
 /*-------aici fac asezarea cate 2 pe linie a brandurilor----------vvvvvvvv*/
 
@@ -60,6 +54,9 @@ main{
     display: table;
   }
 /*--------------------------------------------------------------^^^^^^^^^^^^^^*/
+
+
+
 
 
 /*----imaginea de fundal-----vvvvvv*/
@@ -173,16 +170,21 @@ ul.menu>li:hover{
     overflow:visible;
 }
 /*------------------^^^^^^^^^^^^^^^^^^^^^^^^^6*/
+/*------------------up button------------vvvvvvvvvvvvvvvvvvvvvvv*/
+#upbutton{
+    position: fixed;
+    bottom: 50px;
+    right: 50px; 
+    text-align: center;
+}
 
-
-
-
+/*---------------------------------------^^^^^^^^^^^^^^^^^^^^^^^*/
 /*-------stil footer---vvvvvvvvvv*/
 
 .coloana {
     float: left;
     width: 30%;
-    padding: 10px;
+    padding: 4%;
   }
   
   .rand::after {
@@ -192,7 +194,44 @@ ul.menu>li:hover{
   }
 
   footer{
-      background-image: url("Main-icons and photos/fundal1.jpg");
-      padding-bottom: 0px;
+        padding-left:5%;
+        padding-top:5%;
+        background-image: url("Main-icons and photos/fundal1.jpg");
+        padding-bottom: 5%;
   }
   /*--------------^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+  main{
+    padding-left:2%;
+    padding-right:10%;
+    padding-top:10%;
+    padding-bottom: 5%;
+}
+
+
+/*-------------------------------------------------------test-dummy3------------------------------------------------------------------*/
+div#stanga{
+    background-color: teal;
+    width:20%;
+    opacity: 0.7;
+}
+div#dreapta{
+    width:75%;
+    padding-left: 5%;
+}
+div.coloana{
+    box-sizing:border-box;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+div#container{
+    display:flex;
+}
+/*-----------------------------------------------------------end----------------------------------------------------------------------*/
+

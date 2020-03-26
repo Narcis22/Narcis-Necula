@@ -1,0 +1,81 @@
+#gr{
+    display:grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+  
+  #gr img{
+    width:100%;
+  }
+  
+  #gr figure:nth-child(5){
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  
+  
+  
+  #gr figure:nth-child(6){
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  
+  
+  #gr figure:nth-child(7){
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  
+  
+  #gr figure:hover{
+    box-shadow: grey 0px 0px 8px;
+    transition: box-shadow 1s linear;
+  }
+  
+  
+  #imag{
+    float:left;
+  }
+  
+  
+  @media screen and (max-width:800px){
+    #gr{
+      grid-template-columns:  auto auto;
+    }
+  
+    #gr figure:nth-child(5){
+    grid-area: auto;
+  }
+  
+  
+  
+  #gr figure:nth-child(6){
+    grid-area: auto;
+  }
+  
+  
+  #gr figure:nth-child(7){
+    grid-area: auto;
+  }
+    
+  }
+  
+  @media screen and (max-width:500px){
+    #gr{
+      display:block;
+    }
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
