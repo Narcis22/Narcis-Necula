@@ -61,7 +61,7 @@ figure.NBA-logo-main{
 
 /*----imaginea de fundal-----vvvvvv*/
 body{
-    background-image:url("Main-icons and photos/fundal.png");
+    background-image:url("Main_icons_and_photos/fundal.png");
 }
 /*--------^^^^^^^^^^^^^^^^^^^*/
 
@@ -100,7 +100,7 @@ h1{
     padding: 10px;
   }
   .grid-item {
-    background-image:url("Main-icons and photos/fundal.png");
+    background-image:url("Main_icons_and_photos/fundal.png");
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
@@ -196,7 +196,7 @@ ul.menu>li:hover{
   footer{
         padding-left:5%;
         padding-top:5%;
-        background-image: url("Main-icons and photos/fundal1.jpg");
+        background-image: url("Main_icons_and_photos/fundal1.jpg");
         padding-bottom: 5%;
   }
   /*--------------^^^^^^^^^^^^^^^^^^^^^^*/
