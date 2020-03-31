@@ -69,7 +69,7 @@
     height: 100%;
   
     -webkit-animation-name: travel;
-    -webkit-animation-timing-function: ease-in(0, 50,0),(3,2);
+    -webkit-animation-timing-function: ease-in(0, 50,0);
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     -webkit-animation-duration: 4s;
@@ -81,7 +81,7 @@
     animation-duration: 3.8s;
   }
   
-  #bouncer {
+  #bouncer{
 
     position: absolute;
     width: 20px;

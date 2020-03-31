@@ -118,9 +118,8 @@ h1{
 nav{
 	width:100%;
 	position: sticky;
-    z-index: 150px;
-    
-  text-align: center;
+    z-index: 4;
+    text-align: center;
 }
 ul.menu>li, ul.menu>li>ul.submenu>li{
     
