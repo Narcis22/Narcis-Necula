@@ -263,7 +263,6 @@ ul.menu>li:hover{
 @media screen and (min-width:700px)
 {
     
-
     div#stanga{
         background-color: /*rgb(180, 90, 202)*/teal;
         width:20%;
@@ -295,8 +294,16 @@ ul.menu>li:hover{
     
 }
 
-@media screen and (max-width:700px )
+@media only screen and (max-width:700px)
 {   
+    html{
+        font-size: 13px;
+    }
+    div.gal-responsive {
+        padding: 20px;
+        float: left;
+        width: 90%;
+    }
     div#dreapta{
         width:95%;
         padding-left: 5%;
