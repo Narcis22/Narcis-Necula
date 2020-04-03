@@ -2,6 +2,7 @@
 /*<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 */
 
+
 html{
     font-size:20px;
 }
@@ -12,7 +13,34 @@ html{
     text-indent:0px;
 }
 
-/*-----------------asezarea centrata pe paginile secundare a logoului---------------------------vvvvvv*/
+main{
+    padding-left:2%;
+    padding-right:10%;
+    padding-top:10%;
+    padding-bottom: 5%;
+}
+
+p{
+    padding-left:30px;
+    padding-right:30px;
+}
+div.text-introductiv{
+    background-color:rgba(128, 128, 128, 0.4);
+    display:block;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+body{
+    background-image: url("Main_icons_and_photos/fundal.png");
+}
+aside{
+    padding-left:30px;
+    font-style:italic;
+}
+
+/*1-----------------asezarea centrata pe paginile secundare a logoului---------------------------vvvvvv*/
 figure.nike-logo-main{
         padding-top:100px;
         text-align: center;
@@ -38,35 +66,21 @@ figure.NBA-logo-main{
     text-align: center;
 }
 
-/*-------------------------------------------------------------------------------------------------^^^^^^^^^^*/
+/*1-------------------------------------------------------------------------------------------------^^^^^^^^^^*/
 
-/*-------aici fac asezarea cate 2 pe linie a brandurilor----------vvvvvvvv*/
+/*2-------aici fac asezarea cate 2 pe linie a brandurilor----------vvvvvvvv*/
 
-.column1 {
-    float: left;
-    width: 50%;
-    padding: 5px;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-/*--------------------------------------------------------------^^^^^^^^^^^^^^*/
-
-
-
-
-
-/*----imaginea de fundal-----vvvvvv*/
-body{
-    background-image:url("Main_icons_and_photos/fundal.png");
+.grid_brand{
+    display: grid;
+    grid-template-columns: auto auto;
 }
-/*--------^^^^^^^^^^^^^^^^^^^*/
+.grid_column_brand{
+    text-align: left;
+    padding-left: 20px;
+}
+/*2--------------------------------------------------------------^^^^^^^^^^^^^^*/
 
-/*-------------tabelul---------vvvvvvvvvvvvv*/
-
+/*3-------------tabelul---------vvvvvvvvvvvvv*/
 th,td{
         border:1px solid black;
         padding:5px;
@@ -78,48 +92,70 @@ table{
     border-collapse:collapse;
     empty-cells:show;
 }
-/*-------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*3-------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 
 
-/*-------titlul----vvvvvvvvvv*/
+/*4-------titlul----vvvvvvvvvv*/
 h3{
     font-family: "Times New Roman", Times, serif;
     font-size:18px;
 }
+h4{
+    padding-left:45px;
+    font-size:30px;
+}
 h1{
-    /*position: fixed;*/
-    align:center;
-    display: flex;
+    text-align: center;
     width:100%;
     height:15%;
     background-color:white;
 }
-/*--------^^^^^^^^^^^^^^^^^^^*/
-
-/*---------grid-----------------vvvvvvvvvvvvvvvvvvvvv*/
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  .grid-item {
-    background-image:url("Main_icons_and_photos/fundal.png");
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: left;
-  }
-/*-------------------------------^^^^^^^^^^^^^^^^^*/
+h1 img{
+    height:10vw;
+}
+/*4--------^^^^^^^^^^^^^^^^^^^*/
 
 
-/*-------meniu-------vvvvvvvvvvvvvvvvvvvvvvv*/
-/*nav{
-    width:100%;
-    position:sticky;
-    position:fixed;
-}*/
+
+/*4.5--------------------img gallery------------vvvvvvvvvvv*/
+
+div.gal {
+    background-color: rgba(168, 168, 168, 0.5);
+}
+div.gal:hover {
+    background-color: teal;
+}
+		  
+div.gal img {
+	width: 100%;
+	height: auto;
+}
+		  
+div.desc {
+    padding: 15px;
+	text-align: center;
+}
+		  
+* {
+    box-sizing: border-box;
+}
+		  
+.gal-responsive {
+	padding: 20px;
+    float: left;
+	width: 25%;
+}
+.clarificare:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/*4.5-------------------------------------------------^^^^^^^^^^*/
+
+
+/*5-------meniu-------vvvvvvvvvvvvvvvvvvvvvvv*/
+
 nav{
 	width:100%;
 	position: sticky;
@@ -130,10 +166,10 @@ ul.menu>li, ul.menu>li>ul.submenu>li{
     
     display:block;
     font-family: Ahelvetica-w01-light, helvetica-w02-light, sans-serif;
-    font-size:1.2rem;
+    font-size:1rem;
     font-weight:bold;
-    height:2rem;
-    line-height:2rem;
+    height:1.3rem;
+    line-height:1.3rem;
     text-align:center;		
     list-style-type:none;
     overflow:hidden;
@@ -173,8 +209,8 @@ ul.menu>li>a:hover, ul.submenu>li>a:hover{
 ul.menu>li:hover{
     overflow:visible;
 }
-/*------------------^^^^^^^^^^^^^^^^^^^^^^^^^6*/
-/*------------------up button------------vvvvvvvvvvvvvvvvvvvvvvv*/
+/*5------------------^^^^^^^^^^^^^^^^^^^^^^^^^6*/
+/*6------------------up button------------vvvvvvvvvvvvvvvvvvvvvvv*/
 #upbutton{
     position: fixed;
     bottom: 50px;
@@ -182,42 +218,21 @@ ul.menu>li:hover{
     text-align: center;
 }
 
-/*---------------------------------------^^^^^^^^^^^^^^^^^^^^^^^*/
-/*-------stil footer---vvvvvvvvvv*/
-
-.coloana {
+/*6---------------------------------------^^^^^^^^^^^^^^^^^^^^^^^*/
+.coloana{
     float: left;
     width: 30%;
     padding: 4%;
   }
   
-  .rand::after {
+.rand::after {
     content: "";
     clear: both;
     display: table;
   }
 
-  footer{
-        padding-left:5%;
-        padding-top:5%;
-        background-image: url("Main_icons_and_photos/fundal1.jpg");
-        padding-bottom: 5%;
-  }
-  /*--------------^^^^^^^^^^^^^^^^^^^^^^*/
 
-
-
-
-
-  main{
-    padding-left:2%;
-    padding-right:10%;
-    padding-top:10%;
-    padding-bottom: 5%;
-}
-
-
-/*-------------------------------------------------------test-dummy3------------------------------------------------------------------*/
+/*7-------------------------------------------------------main page alignment------------------------------------------------------------------*/
 div#stanga{
     background-color: /*rgb(180, 90, 202)*/teal;
     width:20%;
@@ -229,13 +244,92 @@ div#dreapta{
 }
 div.coloana{
     box-sizing:border-box;
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+    border-radius: 40px;
 }
 div#container{
     display:flex;
 }
-/*-----------------------------------------------------------end----------------------------------------------------------------------*/
+/*7-----------------------------------------------------------end----------------------------------------------------------------------*/
 
+/*8--------------------------grid-footer still pe doua coloane-------vvvvvvvvvvvvvvvvvvvvv*/
+.grid_footer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.grid_item_footer{
+    background-image: url("Main_icons_and_photos/fundal1.jpg");
+    text-align: left;
+    padding-left: 20px;
+}
+/*8--------------------------------end-------------------------------^^^^^^^^^^^^^^^^*/
+
+/*9--------------------------------media queries-------------------vvvvvvvvvvvvvvvvv*/
+
+@media screen and (min-width:800px)
+{
+    
+
+    /*-------stil footer---vvvvvvvvvv*/
+    footer{
+            display:block;
+            
+            width:100%;
+            padding-left:5%;
+            padding-top:5%;
+            background-image: url("Main_icons_and_photos/fundal1.jpg");
+
+            padding-bottom: 5%;
+      }
+    /*--------------^^^^^^^^^^^^^^^^^^^^^^*/
+    
+    
+}
+@media screen and (min-width:640px) and (max-width:800px)
+{
+    nav{
+
+    }
+    .responsive {
+        width: 49%;
+        margin: 6px 0;
+      }
+    
+    /*-------stil footer---vvvvvvvvvv*/
+    footer{
+            display:block;
+            width:100%;
+            
+            padding-left:5%;
+            padding-top:5%;
+            background-image: url("Main_icons_and_photos/fundal1.jpg");
+            padding-bottom: 5%;
+    }
+    /*--------------^^^^^^^^^^^^^^^^^*/
+
+}
+
+@media screen and (max-width:640px)
+{   
+    .responsive {
+        width: 100%;
+    }
+    h1 img{
+        width:100%;
+    }
+    h1{
+        text-align:center;
+    }
+    .nbaicon img{
+        width:100%;
+    } 
+    
+    footer{
+        display:block;
+        width:100%;
+        padding-left:5%;
+        padding-top:5%;
+        background-image: url("Main_icons_and_photos/fundal1.jpg");
+        padding-bottom: 5%;
+  }
+}
+/*9------------------------------------------------------------^^^^^^^^^^^^^^^^^^^^^^^^*/
