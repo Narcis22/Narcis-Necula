@@ -24,6 +24,16 @@ p{
     padding-left:30px;
     padding-right:30px;
 }
+div.main_paragraf{
+    background-color:rgba(128, 128, 128, 0.4);
+    display:block;
+    width:100%;
+    border-radius:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
 div.text-introductiv{
     background-color:rgba(128, 128, 128, 0.4);
     display:block;
@@ -219,6 +229,7 @@ ul.menu>li:hover{
 }
 
 /*6---------------------------------------^^^^^^^^^^^^^^^^^^^^^^^*/
+/*7-------------------------------------------------------main page alignment------------------------------------------------------------------*/
 .coloana{
     float: left;
     width: 30%;
@@ -231,30 +242,13 @@ ul.menu>li:hover{
     display: table;
   }
 
-
-/*7-------------------------------------------------------main page alignment------------------------------------------------------------------*/
-div#stanga{
-    background-color: /*rgb(180, 90, 202)*/teal;
-    width:20%;
-    opacity: 0.7;
-}
-div#dreapta{
-    width:75%;
-    padding-left: 5%;
-}
-div.coloana{
-    box-sizing:border-box;
-    border-radius: 40px;
-}
-div#container{
-    display:flex;
-}
 /*7-----------------------------------------------------------end----------------------------------------------------------------------*/
 
 /*8--------------------------grid-footer still pe doua coloane-------vvvvvvvvvvvvvvvvvvvvv*/
 .grid_footer {
     display: grid;
     grid-template-columns: auto auto;
+    grid-row-gap:10px;
 }
 .grid_item_footer{
     background-image: url("Main_icons_and_photos/fundal1.jpg");
@@ -265,10 +259,26 @@ div#container{
 
 /*9--------------------------------media queries-------------------vvvvvvvvvvvvvvvvv*/
 
-@media screen and (min-width:800px)
+@media screen and (min-width:700px)
 {
     
 
+    div#stanga{
+        background-color: /*rgb(180, 90, 202)*/teal;
+        width:20%;
+        opacity: 0.7;
+    }
+    div#dreapta{
+        width:75%;
+        padding-left: 5%;
+    }
+    div.coloana{
+        box-sizing:border-box;
+        border-radius: 40px;
+    }
+    div#container{
+        display:flex;
+    }
     /*-------stil footer---vvvvvvvvvv*/
     footer{
             display:block;
@@ -277,52 +287,42 @@ div#container{
             padding-left:5%;
             padding-top:5%;
             background-image: url("Main_icons_and_photos/fundal1.jpg");
-
             padding-bottom: 5%;
       }
     /*--------------^^^^^^^^^^^^^^^^^^^^^^*/
     
-    
-}
-@media screen and (min-width:640px) and (max-width:800px)
-{
-    nav{
-
-    }
-    .responsive {
-        width: 49%;
-        margin: 6px 0;
-      }
-    
-    /*-------stil footer---vvvvvvvvvv*/
-    footer{
-            display:block;
-            width:100%;
-            
-            padding-left:5%;
-            padding-top:5%;
-            background-image: url("Main_icons_and_photos/fundal1.jpg");
-            padding-bottom: 5%;
-    }
-    /*--------------^^^^^^^^^^^^^^^^^*/
-
 }
 
-@media screen and (max-width:640px)
+@media screen and (max-width:700px )
 {   
+    div#dreapta{
+        width:95%;
+        padding-left: 5%;
+    }
     .responsive {
         width: 100%;
     }
     h1 img{
         width:100%;
+        height:100%
     }
     h1{
         text-align:center;
     }
+
+    .grid_footer {
+        grid-template-columns: auto;
+    }
+
     .nbaicon img{
         width:100%;
-    } 
-    
+        height:75%;
+    }
+
+    .grid_brand{
+        grid-template-columns: auto;
+    }
+
     footer{
         display:block;
         width:100%;
