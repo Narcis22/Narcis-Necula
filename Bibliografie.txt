@@ -1,0 +1,29 @@
+1.Pozele cu produse Nike si NBA sunt luate de pe site-ul Nike.com:
+https://www.nike.com/
+
+2.Pozele cu produse Adidas sunt luate de pe site-ul Adidas.com:
+https://www.adidas.com/us
+
+3.Pozele cu produse Under Armour sunt luate de pe site-ul UA.com:
+https://www.underarmour.com/en-ro
+
+4.Pozele cu produse Reebok sunt luate de pe site-ul Reebok.com:
+https://www.reebok.com/us
+
+5.Favicon-ul este creatie prooprie, se poate vedea ovada in fisierul:
+ProiectTW/Proof of making my own favicon
+
+6.logo-urile din folderul: Main_icons_and_photos, sunt preluate de pe google.com 
+si prelucrate manual de catre mine(Narcis Necula) pe site-ul: https://www.online-image-editor.com/
+
+7.Bucati de cod au fost preluate din Laboratoarele de Tehnici Web 
+sustinute de Doamna profesoara Irina Ciocan, si de pe site-ul dansei: http://www.irinaciocan.ro/tehnici_web/index.php
+
+8.Bucati mici de cod preluate de pe W3Schools: https://www.w3schools.com/
+
+9.Scurtele descrieri despre site-uri au fost preluate de pe wikipedia:
+-https://ro.wikipedia.org/wiki/Nike,_Inc.
+-https://ro.wikipedia.org/wiki/Adidas
+-https://ro.wikipedia.org/wiki/Under_Armour
+-https://ro.wikipedia.org/wiki/Reebok
+-https://ro.wikipedia.org/wiki/National_Basketball_Association
