@@ -101,6 +101,7 @@ td:empty{
 table{
     border-collapse:collapse;
     empty-cells:show;
+    margin-right: 10px;
 }
 /*3-------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
@@ -248,12 +249,12 @@ ul.menu>li:hover{
 .grid_footer {
     display: grid;
     grid-template-columns: auto auto;
-    grid-row-gap:10px;
+    grid-column-gap:10px;
+    padding: 40px;
 }
 .grid_item_footer{
     background-image: url("Main_icons_and_photos/fundal1.jpg");
-    text-align: left;
-    padding-left: 20px;
+    text-align:left;
 }
 /*8--------------------------------end-------------------------------^^^^^^^^^^^^^^^^*/
 
@@ -282,6 +283,7 @@ ul.menu>li:hover{
     /*-------stil footer---vvvvvvvvvv*/
     footer{
             display:block;
+            height:10%;
             
             width:100%;
             padding-left:5%;
@@ -325,6 +327,7 @@ ul.menu>li:hover{
 
     footer{
         display:block;
+        height:10%;
         width:100%;
         padding-left:5%;
         padding-top:5%;
