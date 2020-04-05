@@ -87,7 +87,7 @@
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-image: url("Main_icons_and_photos/Bouncing-20-20.png");
+    background-image: url("../Main_icons_and_photos/Bouncing-20-20.png");
     animation-direction: alternate;
 
     -webkit-animation-name: bounce, spin;
