@@ -22,10 +22,16 @@
     div#container{
         display:flex;
     }
+
+    div.galerie_produse {
+        width: 75vw;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
     /*-------stil footer---vvvvvvvvvv*/
     footer{
             display:block;
-            height:10%;
+            height:5%;
             
             width:100%;
             padding-left:5%;
@@ -44,8 +50,8 @@
     }
     div.gal-responsive {
         padding: 10px;
-        
-        width: 45%;
+        float: left;
+        width: 90%;
     }
     div#dreapta{
         width:95%;
@@ -55,11 +61,10 @@
         width: 100%;
     }
     h1 img{
-        width:100%;
-        height:100%
+        height:10vw;
     }
     h1{
-        text-align:center;
+        text-align:left;
     }
 
     .grid_footer {
@@ -75,9 +80,15 @@
         grid-template-columns: auto;
     }
 
+    div.galerie_produse {
+        width: 75vw;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
     footer{
         display:block;
-        height:10%;
+        height:5%;
         width:100%;
         padding-left:5%;
         padding-top:5%;
@@ -104,11 +115,10 @@
         width: 100%;
     }
     h1 img{
-        width:100%;
-        height:100%
+        height: 10vw;
     }
     h1{
-        text-align:center;
+        text-align:left;
     }
 
     .grid_footer {
@@ -124,9 +134,15 @@
         grid-template-columns: auto;
     }
 
+    div.galerie_produse {
+        width: 75vw;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
     footer{
         display:block;
-        height:10%;
+        height:5%;
         width:100%;
         padding-left:5%;
         padding-top:5%;

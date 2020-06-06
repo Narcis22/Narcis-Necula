@@ -1,4 +1,3 @@
-
 /*<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 */
     
@@ -8,36 +7,20 @@
     text-indent:0px;
 }
 
-
-main{
-    padding-left:2%;
-    padding-right:10%;
-    padding-top:10%;
-    padding-bottom: 5%;
-}
-
 p{
-    padding-left:30px;
+    padding-left:5px;
     padding-right:30px;
 }
 div.main_paragraf{
     background-color:rgba(128, 128, 128, 0.4);
     display:block;
-    width:100%;
-    border-radius:10px;
+    width:70vw;
     padding-left:10px;
     padding-right:10px;
     padding-top:10px;
     padding-bottom:10px;
 }
-div.text-introductiv{
-    background-color:rgba(128, 128, 128, 0.4);
-    display:block;
-    padding-left:10px;
-    padding-right:10px;
-    padding-top:10px;
-    padding-bottom:10px;
-}
+
 body{
     background-image: url("../Main_icons_and_photos/fundal.png");
 }
@@ -48,27 +31,27 @@ aside{
 
 /*1-----------------asezarea centrata pe paginile secundare a logoului---------------------------vvvvvv*/
 figure.nike-logo-main{
-        padding-top:100px;
-        text-align: center;
+    padding-bottom:10%;
+    text-align: center;
 }
 
 figure.adidas-logo-main{
-    padding-top:100px;
+    padding-bottom:10%;
     text-align: center;
 }
 
 figure.underarmour-logo-main{
-    padding-top:100px;
+    padding-bottom:10%;
     text-align: center;
 }
 
 figure.reebok-logo-main{
-    padding-top:100px;
+    padding-bottom:10%;
     text-align: center;
 }
 
 figure.NBA-logo-main{
-    padding-top:100px;
+    padding-bottom:10%;
     text-align: center;
 }
 
@@ -113,19 +96,20 @@ h4{
     font-size:30px;
 }
 h1{
-    text-align: center;
+    text-align: left;
     width:100%;
     height:15%;
     background-color:white;
 }
 h1 img{
-    height:10vw;
+    height:5vw;
 }
 /*4--------^^^^^^^^^^^^^^^^^^^*/
 
 
 
 /*4.5--------------------img gallery------------vvvvvvvvvvv*/
+
 
 div.gal {
     background-color: rgba(168, 168, 168, 0.5);
@@ -143,11 +127,11 @@ div.gal img {
 }
 		  
 div.desc {
-    padding: 15px;
+    padding: 10px;
 	text-align: center;
 }
 div.desc_pret {
-    padding: 15px;
+    padding: 10px;
 	text-align: center;
     background-color: rgba(255, 68, 0, 0.527);
 }
@@ -157,9 +141,9 @@ div.desc_pret {
 }
 		  
 .gal-responsive {
-	padding: 20px;
+	padding: 10px;
     float: left;
-	width: 25%;
+	width: 100%;
 }
 .clarificare:after {
 	content: "";
@@ -262,6 +246,14 @@ ul.menu>li:hover{
 }
 /*8--------------------------------end-------------------------------^^^^^^^^^^^^^^^^*/
 
-/*9--------------------------------media queries-------------------vvvvvvvvvvvvvvvvv*/
-/*Check the other .css file*/
+/*9--------------------------------filtru-------------------vvvvvvvvvvvvvvvvv*/
+
+
+
+.filtrare_produse{
+    background-color: rgba(0, 128, 128, 0.5);
+    border-radius: 25px;
+    padding-bottom: 15px;
+}
+
 /*9------------------------------------------------------------^^^^^^^^^^^^^^^^^^^^^^^^*/

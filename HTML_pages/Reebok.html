@@ -8,9 +8,11 @@
 	<meta name = "keywords" content = "reebok,Reebok,shaq,shaquille,o'neal,O'neal,baschti,Baschetball-ist, baschetball-ist">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="../Main_icons_and_photos/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../CSS_pages/Main_Secundaries.css"/>
 	<link rel="stylesheet" type="text/css" href="../CSS_pages/Style.css"/>
 	<link rel="stylesheet" type="text/css" href="../CSS_pages/Media_queries.css"/>
-	
+	<script src="/JS_pages/script.js"></script>
+
 </head>
 <body>
 	<header>
@@ -41,30 +43,74 @@
 	</header>
 	
 	
-
+<main>
 	<figure class = "reebok-logo-main">
-    <img alt="Logoul Reebok" src="../Reebok/reebok-logo.png" width="300" height="225">
+    <img alt="Logoul Reebok" src="../Main_icons_and_photos/Reebok/reebok-logo.png" width="300" height="125">
 </figure>
-	
-<br><br><br><br>
+<br><br><br>
+
+<div class="filtrare_produse"></br>
+	<p><b>Price Range</b></p>
+	<label for="i_range">
+		<input id="i_range" type="range" min="10" max="500" step="10">
+	</label>
+	</br>
+
+	<p><b>Gen</b></p>
+		<label>
+			<input id="i_check1" name="gr_chck" value="1" type="checkbox"/>
+			Barbați
+		</label></br>
+		<label>
+			<input id="i_check2" name="gr_chck" value="2" type="checkbox"/>
+			Femei
+		</label>
+	</br></br>
+
+	<p><b>Tipul produselor</b></p>
+	<input id="i_check3" name="gr_chck" value="3" type="checkbox"/>
+		Încălțăminte
+	</label></br>
+	<label>
+		<input id="i_check4" name="gr_chck" value="4" type="checkbox"/>
+		Jersey-uri
+	</label>
+	</br>
+	<label>
+		<input id="i_check5" name="gr_chck" value="5" type="checkbox"/>
+		Accesorii
+	</label>
+	</br></br>
+
+	<p class = "sale"><b>Sale</b></p>
+	<label>
+		<input id="i_check4" name="gr_chck" value="6" type="checkbox"/>
+		Numai produsele reduse 
+	</label>
+	</br>
+</div>
+<div>
+
 <div class = "text-introductiv">
 	<h4>Scurtă descriere</h4>
-	<p>Reebok International Ltd. este o companie americană de îmbrăcăminte și încălțăminte care
-		 operează ca filială a Adidas din 2005. Reebok produce și distribuie echipament 
-		 de fitness, alergare și articole sportive de CrossFit, inclusiv haine și încălțăminte. 
-		 Este sponsorul oficial pentru încălțăminte și îmbrăcăminte pentru Ultimate Fighting Championship, 
-		 CrossFit, Spartan Race și Les Mills.<br>
-		În 1958, Reebok a fost înființat ca filială a J.W. Foster and Sons, fondată în 1895 în Bolton, 
-		Greater Manchester, Anglia. Din 1958 până în 1986, îmbrăcămintea Reebok avea un drapel Union Jack.<br><!--wikipedia-->
-</p><br>
-<p>Primim noua colectie <time datetime="2020-07-21 00:00">in ziua speciala(21.07)</time>!</p></div><br><br><br>
+	<ul>
+	<li><p>Reebok International Ltd. este o companie americană de îmbrăcăminte și încălțăminte care operează ca filială a Adidas din 2005. Reebok produce și distribuie echipament de fitness, alergare și articole sportive de CrossFit, inclusiv haine și încălțăminte. Este sponsorul oficial pentru încălțăminte și îmbrăcăminte pentru Ultimate Fighting Championship, CrossFit, Spartan Race și Les Mills.<br></p></li>
+	<li><p>În 1958, Reebok a fost înființat ca filială a J.W. Foster and Sons, fondată în 1895 în Bolton, Greater Manchester, Anglia. Din 1958 până în 1986, îmbrăcămintea Reebok avea un drapel Union Jack.<br><!--wikipedia--></p><br></li>
+	<li><p>Primim noua colectie <time datetime="2020-07-21 00:00">in ziua speciala(21.07)</time>!</p></li>
+	</ul>
+	</div><br><br><br>
 
 <!--aici pun galeria de produse(imgaini cu descriere)-imaginile de pe NBA.com-->
-		  
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<div class="galerie_produse">
+
 <div class="gal-responsive">
 	<div class="gal">
-	   <a href="../Reebok/answerv-1.png">
-			<img src="../Reebok/answerv-1.png" alt="Reebok Answer V" width="400" height="600">
+	   <a href="../Main_icons_and_photos/Reebok/answerv-1.png">
+			<img src="../Main_icons_and_photos/Reebok/answerv-1.png" alt="Reebok Answer V" width="400" height="600">
 		</a>
 		<div class="desc">135.00$</div>
 		<div class="desc">Answer V </div>
@@ -74,8 +120,8 @@
 	  
 	  <div class="gal-responsive">
 		<div class="gal">
-		  <a href="../Reebok/avguard-1.png">
-			<img src="../Reebok/avguard-1.png" alt="Reebok Avant guard" width="400" height="600">
+		  <a href="../Main_icons_and_photos/Reebok/avguard-1.png">
+			<img src="../Main_icons_and_photos/Reebok/avguard-1.png" alt="Reebok Avant guard" width="400" height="600">
 		  </a>
 		  <div class="desc_pret"><del>150.00$</del> 130.00$</div>
 		  <div class="desc">Avant Guard Black-White</div>
@@ -84,8 +130,8 @@
 	  
 	  <div class="gal-responsive">
 		<div class="gal">
-		  <a href="../Reebok/bbos-1.png">
-			<img src="../Reebok/bbos-1.png" alt="Reebok BBOS mid" width="400" height="600">
+		  <a href="../Main_icons_and_photos/Reebok/bbos-1.png">
+			<img src="../Main_icons_and_photos/Reebok/bbos-1.png" alt="Reebok BBOS mid" width="400" height="600">
 		  </a>
 		  <div class="desc_pret"><del>175.00$</del> 115.00$</div>
 		  <div class="desc">BB OS Mid</div>
@@ -94,24 +140,236 @@
 	  
 	  <div class="gal-responsive">
 		<div class="gal">
-		  <a href="../Reebok/question-1.png">
-			<img src="../Reebok/question-1.png" alt="Reebok question 1" width="400" height="600">
+		  <a href="../Main_icons_and_photos/Reebok/question-1.png">
+			<img src="../Main_icons_and_photos/Reebok/question-1.png" alt="Reebok question 1" width="400" height="600">
 		  </a>
 		  <div class="desc">95.00$</div>
 		  <div class="desc">Question Mid</div>
 		</div>
 	</div>
 
-	  <div class="clarificare"></div><div class="gal-responsive">
-	  </div>
-<!--pana aici galeria-->
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/LesMills_BackPack.png">
+			<img src="../Main_icons_and_photos/Reebok/LesMills_BackPack.png" alt="LesMills BackPack" width="400" height="600">
+		  </a>
+		  <div class="desc">175.00$</div>
+		  <div class="desc">Reebok Les Mills Backpack</div>
+		</div>
+	</div>
 
-<br><br><br><br><br><br><br>
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_ActiveCrew_Socks.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_ActiveCrew_Socks.png" alt="Reebok Active Crew Socks" width="400" height="600">
+		  </a>
+		  <div class="desc">15.00$</div>
+		  <div class="desc">Reebok Active Crew Socks Blue</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_AustinII_Shorts_Blue.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_AustinII_Shorts_Blue.png" alt="Reebok Austin II Shorts Blue" width="400" height="600">
+		  </a>
+		  <div class="desc">45.00$</div>
+		  <div class="desc">Reebok Austin II Shorts Blue</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_Classic_Shirt.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_Classic_Shirt.png" alt="Reebok Classic Shirt" width="400" height="600">
+		  </a>
+		  <div class="desc">25.00$</div>
+		  <div class="desc">Reebok Classic Shirt White</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_ClassicsBag_Blue.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_ClassicsBag_Blue.png" alt="Reebok Classics Bag Blue" width="400" height="600">
+		  </a>
+		  <div class="desc">65.00$</div>
+		  <div class="desc">Reebok Classics Bag Blue</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_CompressionBriefs.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_CompressionBriefs.png" alt="Reebok Compression Briefs" width="400" height="600">
+		  </a>
+		  <div class="desc">35.00$</div>
+		  <div class="desc">Reebok Compression Briefs</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_CrewSocks_Purple.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_CrewSocks_Purple.png" alt="Reebok CrewSocks Purple" width="400" height="600">
+		  </a>
+		  <div class="desc">15.00$</div>
+		  <div class="desc">Reebok Crew Socks Purple</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_Duffelbag.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_Duffelbag.png" alt="Reebok Duffelbag" width="400" height="600">
+		  </a>
+		  <div class="desc">45.00$</div>
+		  <div class="desc">Reebok Duffelbag</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_EpicBase_Shorts.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_EpicBase_Shorts.png" alt="Reebok Epic Base Shorts" width="400" height="600">
+		  </a>
+		  <div class="desc">25.00$</div>
+		  <div class="desc">Reebok Epic Base Shorts</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_Queestion_Orange.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_Queestion_Orange.png" alt="Reebok Question Orange" width="400" height="600">
+		  </a>
+		  <div class="desc">135.00$</div>
+		  <div class="desc">Reebok Question Orange</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_Question_Blue.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_Question_Blue.png" alt="Reebok Question Blue" width="400" height="600">
+		  </a>
+		  <div class="desc">135.00$</div>
+		  <div class="desc">Reebok Question Blue</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_SpeedShorts_Black.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_SpeedShorts_Black.png" alt="Reebok Speed Shorts Black" width="400" height="600">
+		  </a>
+		  <div class="desc">35.00$</div>
+		  <div class="desc">Reebok Speed Shorts Black</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_SpeedShorts_Orange.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_SpeedShorts_Orange.png" alt="Reebok Speed Shorts Orange" width="400" height="600">
+		  </a>
+		  <div class="desc">35.00$</div>
+		  <div class="desc">Reebok Speed Shorts Orange</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_Training_Backpack.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_Training_Backpack.png" alt="Reebok Training Backpack" width="400" height="600">
+		  </a>
+		  <div class="desc">85.00$</div>
+		  <div class="desc">Reebok Training Backpack</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_VectorSocks.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_VectorSocks.png" alt="Reebok Vector Socks" width="400" height="600">
+		  </a>
+		  <div class="desc">15.00$</div>
+		  <div class="desc">Reebok Vector Socks Black</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_Black.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_Black.png" alt="Reebok W Vector Shirt Black" width="400" height="600">
+		  </a>
+		  <div class="desc">25.00$</div>
+		  <div class="desc">Reebok Womens Vector Shirt Black</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_Blue.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_Blue.png" alt="Reebok W Vector Shirt Blue" width="400" height="600">
+		  </a>
+		  <div class="desc">25.00$</div>
+		  <div class="desc">Reebok Womens Vector Shirt Blue</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_Grey.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_Grey.png" alt="Reebok W Vector Shirt Grey" width="400" height="600">
+		  </a>
+		  <div class="desc">25.00$</div>
+		  <div class="desc">Reebok Womens Vector Shirt Grey</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_Red.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_Red.png" alt="Reebok W Vector Shirt Red" width="400" height="600">
+		  </a>
+		  <div class="desc">25.00$</div>
+		  <div class="desc">Reebok Womens Vector Shirt Red</div>
+		</div>
+	</div>
+
+	<div class="gal-responsive">
+		<div class="gal">
+		  <a href="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_White.png">
+			<img src="../Main_icons_and_photos/Reebok/Reebok_W_VectorShirt_White.png" alt="Reebok W Vector Shirt White" width="400" height="600">
+		  </a>
+		  <div class="desc">25.00$</div>
+		  <div class="desc">Reebok Womens Vector Shirt White</div>
+		</div>
+	</div>
+
+	  <div class="clarificare"></div><div class="gal-responsive">
+	  </div>	
+
+</div>
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<!--pana aici galeria-->
+	</div>
+</main>
+
 <footer id = "Contact" class = "grid_footer">
 	<section class = "grid_item_footer">
 		<h3>Site detinut de catre <i>Basketball-ist SRL</i></h3>
 		
 		<br>
+		<a href = "https://www.facebook.com/ReebokRomania/">
+			<figure>
+				<img alt="Pagina de fb a Reebok" src="../Main_icons_and_photos/facebook-logo.png" width="70" height="70">
+			<figcaption><b>Pagina de Facebook a Reebok</b></figcaption>
+		</a>
 		<figure>
 				<img alt="Mail" src="../Main_icons_and_photos/Mail.png" width="70" height="70">
 			<figcaption><b>Date de contact:<a href="mailto:ala_bala21@yahoo.com">ala_bala21@yahoo.com</a><br/><br></b></figcaption>

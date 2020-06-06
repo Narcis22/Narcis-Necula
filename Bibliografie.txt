@@ -10,7 +10,7 @@ https://www.underarmour.com/en-ro
 4.Pozele cu produse Reebok sunt luate de pe site-ul Reebok.com:
 https://www.reebok.com/us
 
-5.Favicon-ul este creatie prooprie, se poate vedea ovada in fisierul:
+5.Favicon-ul este creatie prooprie, se poate vedea dovada in fisierul:
 ProiectTW/Proof of making my own favicon
 
 6.logo-urile din folderul: Main_icons_and_photos, sunt preluate de pe google.com 
