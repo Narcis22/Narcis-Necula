@@ -32,12 +32,11 @@
     footer{
             display:block;
             height:5%;
-            
             width:100%;
-            padding-left:5%;
-            padding-top:5%;
+            padding-left:1%;
+            padding-top:1%;
             background-image: url("/imagini/Main_icons_and_photos/fundal1.jpg");
-            padding-bottom: 5%;
+            padding-bottom: 1%;
       }
     /*--------------^^^^^^^^^^^^^^^^*/
 
@@ -138,12 +137,12 @@
         display:block;
         height:5%;
         width:100%;
-        padding-left:5%;
-        padding-top:5%;
+        padding-left:1%;
+        padding-top:1%;
         background-image: url("/imagini/Main_icons_and_photos/fundal1.jpg");
-        padding-bottom: 5%;
-  }
-  /*10-butonul de inregistrare-vvvvvvvvvvvvvvvvv*/
+        padding-bottom: 1%;
+    }
+    /*10-butonul de inregistrare-vvvvvvvvvvvvvvvvv*/
     h1{
         display: grid;
         grid-template-rows: 70% 30%;
@@ -237,10 +236,10 @@
         display:block;
         height:5%;
         width:100%;
-        padding-left:5%;
-        padding-top:5%;
+        padding-left:1%;
+        padding-top:1%;
         background-image: url("/imagini/Main_icons_and_photos/fundal1.jpg");
-        padding-bottom: 5%;
+        padding-bottom: 1%;
   }
   /*10-butonul de inregistrare-vvvvvvvvvvvvvvvvv*/
     h1{

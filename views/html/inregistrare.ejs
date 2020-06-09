@@ -13,19 +13,61 @@
 </head>
 <body>
     <header>
-        <% include ../fragmente/header %><!--includ headerul-->
+        <%- include("../fragmente/header")  %><!--aici adaug header-ul-->
     </header>
 
     <main>
         <div class="inreg_title">
+                <img src="/imagini/Main_icons_and_photos/add_user.png" alt="add user image">
             <h2>Formular de înregistrare</h2>
-            <p>Completați formularul pentu noul utilizator:</p>
-        </div>
-        <img src="/resurse/imagini/Main_icons_and_photos/add_user.png" alt="add user image">
+            
+     </div>
+     <p>Completați formularul pentu noul utilizator:</p></br>
+     <% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+		<form method="post" action="/inreg" class="date">
+			<p>
+			<label>
+				Username: <input type="text" name="username" value="">
+			</label>
+			</p></br>
+			<p>
+			<label>
+				Nume: <input type="text" name="nume" value="">
+			</label>
+			</p></br>
+			<p>
+			<label>
+				Branduri favorite(separate cu virgula): <input type="text" name="materii" value="" size="50">
+			</label>
+			</p></br>
+			<p>
+			<label>
+				Parola: <input type="password" name="parola" value="">
+			</label>
+			</p></br>
+			<p>
+			<label>
+				Reintroduceti parola: <input type="password" name="rparola" value="">
+			</label>
+			</p></br>
+			<p>
+			<label>
+				Email: <input type="text" name="email" value=""  size="50">
+			</label>
+			</p></br>
+			<p class="button btn">		
+			<input type="submit" value="Submit">
+			</p>
+		</form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
     </main>
 
     <footer>
-        <% include ../fragmente/footer %><!--includ footerul-->
+        <%- include("../fragmente/footer")  %><!--aici adaug footer-ul-->
     </footer>
 </body>
 </html>

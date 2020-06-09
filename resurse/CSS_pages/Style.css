@@ -230,7 +230,7 @@ ul.menu>li:hover{
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap:10px;
-    padding: 40px;
+    padding: 10px;
 }
 .grid_item_footer{
     background-image: url("/imagini/Main_icons_and_photos/fundal1.jpg");
@@ -247,4 +247,11 @@ ul.menu>li:hover{
 }
 
 /*9------------------------------------------------------------^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*11---------------------------inreg-----------------------vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+div.inreg_title{
+    text-align: center;
+}
+
+/*11---------------------------end------------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
