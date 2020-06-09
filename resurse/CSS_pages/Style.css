@@ -22,7 +22,7 @@ div.main_paragraf{
 }
 
 body{
-    background-image: url("../Main_icons_and_photos/fundal.png");
+    background-image: url("/imagini/Main_icons_and_photos/fundal.png");
 }
 aside{
     padding-left:30px;
@@ -95,15 +95,7 @@ h4{
     padding-left:45px;
     font-size:30px;
 }
-h1{
-    text-align: left;
-    width:100%;
-    height:15%;
-    background-color:white;
-}
-h1 img{
-    height:5vw;
-}
+
 /*4--------^^^^^^^^^^^^^^^^^^^*/
 
 
@@ -241,14 +233,12 @@ ul.menu>li:hover{
     padding: 40px;
 }
 .grid_item_footer{
-    background-image: url("../Main_icons_and_photos/fundal1.jpg");
+    background-image: url("/imagini/Main_icons_and_photos/fundal1.jpg");
     text-align:left;
 }
 /*8--------------------------------end-------------------------------^^^^^^^^^^^^^^^^*/
 
 /*9--------------------------------filtru-------------------vvvvvvvvvvvvvvvvv*/
-
-
 
 .filtrare_produse{
     background-color: rgba(0, 128, 128, 0.5);
@@ -257,3 +247,4 @@ ul.menu>li:hover{
 }
 
 /*9------------------------------------------------------------^^^^^^^^^^^^^^^^^^^^^^^^*/
+
