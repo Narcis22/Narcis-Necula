@@ -132,11 +132,11 @@ app.get('/*', function(req, res) {
 
 
 // tratarea erorii 404 se pune la final (aici o sa fie un caz general, pe care intra orice cerere). Daca s-a gasit mai sus, se opreste acolo; nu mai ajunge aici.*/
-/*
+
 app.use(function(req,res){
 	res.status(404).render("html/404");//din views/html/404.ejs
 }); 
-*/
+
 
 app.listen(8080);
 console.log('Aplicatia se va deschide pe portul 8080.');

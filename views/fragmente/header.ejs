@@ -6,7 +6,7 @@
 
      
      <a href="/inregistrare.ejs"><button class="button btn">Înregistrare</button></a>
-    
+     <% if(!locals.username) { %>
      <div class="form"><form method="post" action="/login">
      <label>
          Username: <input type="text" name="username" value="">
@@ -14,8 +14,13 @@
      <label>
          Parola: <input type="password" name="parola" value="">
      </label>
-     <input type="submit" value="OK">
-    </form></div>
+     <input type="submit" value="OK">   
+    </form>
+    <% } else { %>
+        Logat: <%= locals.username %>
+		<a href="/logout"> Logout</a>
+	<% } %>
+    </div>
     </div>
     
     </h1>

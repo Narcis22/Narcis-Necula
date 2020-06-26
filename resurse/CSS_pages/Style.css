@@ -253,5 +253,12 @@ div.inreg_title{
     text-align: center;
 }
 
+p.error{
+    font-size: 30px;
+}
+.error img{
+    display: flexbox;
+    width: 90vw;
+}
 /*11---------------------------end------------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 

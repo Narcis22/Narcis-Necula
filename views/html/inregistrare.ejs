@@ -23,8 +23,8 @@
             
      </div>
      <p>Completați formularul pentu noul utilizator:</p></br>
-     <% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
-		<form method="post" action="/inreg" class="date">
+     
+		<form method="post" action="/inreg" class="date" enctype = "multipart/form-data">
 			<p>
 			<label>
 				Username: <input type="text" name="username" value="">
@@ -45,11 +45,11 @@
 				Parola: <input type="password" name="parola" value="">
 			</label>
 			</p></br>
-			<p>
+			<!--<p>
 			<label>
 				Reintroduceti parola: <input type="password" name="rparola" value="">
 			</label>
-			</p></br>
+			</p></br>*/-->
 			<p>
 			<label>
 				Email: <input type="text" name="email" value=""  size="50">
@@ -59,11 +59,6 @@
 			<input type="submit" value="Submit">
 			</p>
 		</form>
-		<% } else if(rsstatus=="ok"){ %>
-			<p>Date introduse</p>
-		<% } else {%>
-			<p>Eroare</p>
-		<% } %>
     </main>
 
     <footer>
