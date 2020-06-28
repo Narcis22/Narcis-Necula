@@ -1,0 +1,17 @@
+<script>
+    function rand_text(){
+    var random_text = new Array ();
+    random_text[0] = "People say nothing is impossible, but i do nothing everyday.";
+    random_text[1] = "If i were two-faced, would i use this one? </br>  ~Abraham Lincoln~";
+    random_text[2] = "Money won’t buy happiness, but it will pay the salaries of a large research staff to study the problem. </br>  ~Bill Vaughan~";
+    random_text[3] = "The surest sign that intelligent life exists elsewhere in the universe is that it has never tried to contact us.</br>  ~Bill Watterson~";
+    random_text[4] = "If you’re going to tell people the truth, be funny or they’ll kill you.</br>  ~Billy Wilder~";
+    random_text[5] = "If you think you are too small to make a difference, try sleeping with a mosquito. </br> ~Dalai Lama~";
+    random_text[6] = "A failure is like fertilizer; it stinks to be sure, but it makes things grow faster in the future. </br> ~Denis Waitley~";
+    var i = Math.floor(7*Math.random());
+    return random_text[i];
+    }
+
+    document.getElementById("cerinta1").innerHTML = rand_text();
+    
+</script>

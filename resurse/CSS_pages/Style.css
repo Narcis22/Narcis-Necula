@@ -238,9 +238,9 @@ ul.menu>li:hover{
 }
 /*8--------------------------------end-------------------------------^^^^^^^^^^^^^^^^*/
 
-/*9--------------------------------filtru-------------------vvvvvvvvvvvvvvvvv*/
+/*9--------------------------------ceas animat-------------------vvvvvvvvvvvvvvvvv*/
 
-.filtrare_produse{
+.animatie_simpla{
     background-color: rgba(0, 128, 128, 0.5);
     border-radius: 25px;
     padding-bottom: 15px;
@@ -262,3 +262,55 @@ p.error{
 }
 /*11---------------------------end------------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
+
+#cerinta1{
+    display: flexbox;
+    width:70vw;
+    background-image: url("/imagini/Main_icons_and_photos/fundal2.png");
+    text-align-last: center;
+}
+
+
+.cerinta2{
+    display: flexbox;
+    width:70vw;
+    background-image: url("/imagini/Main_icons_and_photos/fundal3.png");
+    text-align-last: center;
+}
+
+
+.cerinta3{
+    display: flexbox;
+    width:70vw;
+    background-image: url("/imagini/Main_icons_and_photos/fundal4.png");
+    text-align-last: center;
+}
+
+div#change_color{
+    display: flexbox;
+    text-align: center;
+}
+
+#myAnimation {
+	width: 50px;
+	height: 50px;
+    border-radius: 50px;
+	background-image: url("/imagini/Main_icons_and_photos/Bouncing-50-50.png");
+	position: absolute;
+  }
+
+
+.afis{
+    border:4px solid teal;
+    padding:0.7em;
+    border-radius: 10px;
+}
+
+.templ_produs{
+    border:1px solid grey;
+    padding:0.4em;
+}
+
+h3{
+    font-size:30px;
+}

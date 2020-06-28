@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "ro">
 <head> 
-	<title> Baschetball-ist.ro </title>
+	<title> </title>
 	<meta charset="UTF-8">
 	<meta name = "Author" content = "Narcis">
 	<meta name = "description" content ="Magazin online de accesorii sportive de basket">
@@ -15,8 +15,15 @@
 	
 </head>
 <body>
+    <%- include("../fragmente/Cerinte_Suplimentare_6")  %>
 	<%- include("../fragmente/header")  %><!--aici adaug header-ul-->
-    
+
+
+	<!--Aici am introdus a 5-a cerinta Nivel 1-11 schimb culoarea cu cea introdusa-->
+	<%- include("../fragmente/Cerinte_Suplimentare_5")  %>
+	<!------------------------------------------------------------------------------>
+
+
 	<main>
 	<div id = "container">
 		<div id = "stanga" class = "coloana" > 
@@ -28,10 +35,20 @@
 		</div>
 			
 		<div id = "dreapta" class = "coloana" >
-		<div class = "main_paragraf"><aside>
+			<div id = "cerinta1" >	
+				<!--Aici se afla prima cerinta Nivel 1- cerinta 7 -->
+				<%- include("../fragmente/Cerinte_Suplimentare_1")  %>
+				<!--Pana aici prima cerinta-->
+			</div></br>
+
+		<div class = "main_paragraf">
+			
+		
+		<aside>
 				Acest site este un magazin online de articole sportive, special pentru baschetball.
 		</aside>
-		<div>
+		<div></br>
+		
 			<P>Pe aceasta pagina gasiti produse originale in panrteneriat cu firmele faimoase:Nike, Adidas, Reebok, Under Armour, dar si in parteneriat cu NBA </P>
 			<p>Aici veti gasi produse realizate in parteneriate cu superstarurile lumii basketului precum:LeBron James, Michael Jordan, Kobe Bryant si multi altii.</p>
 		</div></div><br><br><br><br>
@@ -69,6 +86,18 @@
 					</div>
 				</div>
 			</section>
+
+
+
+			
+			<!--Aici se afla a 2-a cerinta nivel 1-6 numaratoare inversa pana la black friday-->
+			<%- include("../fragmente/Cerinte_Suplimentare_2")  %>
+			<!--------------------------------------------------------------------------------->
+
+
+
+
+		</br>
 			<section id = "partenership">
 			<div class = "main_paragraf"><h2>Produse realizate in parteneriat cu NBA:</h2><br>
 				<p>
@@ -82,10 +111,18 @@
 					</a>
 				</p> <br><br><br><br><br>
 			</section>
-			</div>	
+
+
+	<!--Aici se afla a 3 a cerinta Nivel 2-1 --->
+	<%- include("../fragmente/Cerinte_Suplimentare_3")  %>
+	<!------------------------------------------------------------------------------->
+
+	</div>	
 	</div>
 	</main>
 
+
+	
 <%- include("../fragmente/footer")  %><!--aici adaug footer-ul-->
 
 </body>

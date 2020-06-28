@@ -1,0 +1,30 @@
+<div class = "cerinta2">
+    <p>Aici iti poti introduce data de nastere si iti vom calcula varsta!</p>
+    <p id = "live_counter"></p>
+    <input type="text" name="bday" id="bday" >
+    <button  onclick="Display()">Click aici pentru a vedea rezultatul</button>
+    <script>
+        function Display(){
+        var x = setInterval(    
+            function counter_up() {
+            var Bdate = document.getElementById('bday').value;
+            var zi = Bdate.slice(0, 2);
+            var luna = Bdate.slice(3, 5);
+            var an = Bdate.slice(6, 10);
+            var Bdate1 = an.concat('/');
+            var Bdate2 = Bdate1.concat(luna);
+            var Bdate3 = Bdate2.concat('/');
+            var Bdate4 = Bdate3.concat(zi);
+            var BunDate = new Date(Bdate4);
+            var now = new Date().getTime();
+            var distance = now - BunDate;
+            var years = Math.floor(distance / 31556952000);
+            var days = Math.floor((distance % 31556952000) / 86400000);
+            var hours = Math.floor((distance % 86400000) / 3600000);
+            var minutes = Math.floor((distance % 3600000) / 60000);
+            var seconds = Math.floor((distance % 60000) / 1000);
+            document.getElementById("live_counter").innerHTML = "Varsta dumneavoastra este: " + years + "ani " + days + "zile " + hours + "ore  " + minutes + "min " + seconds + "sec ";
+        },1000);}
+    </script>
+</div>
+

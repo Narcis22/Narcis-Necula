@@ -1,0 +1,28 @@
+<script>
+    var titlu = 'Baschetball-ist';
+    var temptitlu = '';
+    temptitlu+=titlu[0];
+    for(var i = 1; i < titlu.length-1; ++i)
+        temptitlu += ' ';
+    temptitlu += titlu[titlu.length - 1];
+    document.querySelector('title').innerHTML = temptitlu;
+    var indexInc = 1;
+    var indexSf = temptitlu.length - 2;
+    var x = setInterval(function (){
+        if(indexInc < indexSf)
+        {
+            temptitlu = titlu.slice(0,indexInc + 1) + temptitlu.slice(indexInc + 1, indexSf) + titlu.slice(indexSf);
+            indexInc += 1;
+            indexSf -= 1;
+            document.querySelector('title').innerHTML = temptitlu;
+            
+        } else if(indexInc == indexSf){
+            document.querySelector('title').innerHTML = titlu;
+        } else {
+
+            clearInterval(x);
+        }
+ }, 100);
+
+
+</script>

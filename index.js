@@ -1,37 +1,31 @@
-var express = require('express');/*include modulul express
-memorand in variabila express obiectul asociat modulului(exportat de modul)*/
+
+var express = require('express');
 var path = require('path');
 var app = express();
 var formidable = require('formidable');
 var session = require('express-session');
 
-var fs = require('fs');//file system
+var fs = require('fs');
 var crypto = require('crypto')
-
-// pentru folosirea ejs-ului 
+ 
 app.set('view engine', 'ejs');
 
-console.log(__dirname);//calea (radacina) aplicatiei Node
+console.log(__dirname);
 app.use(express.static(path.join(__dirname, "resurse")));
-/* caile vor fi realtive la folderul static proiect/resurse/css/stil.css in href o sa scrieti /css/stil.css*/
 
 app.use(session(
 	{
 		secret:"cheie_sesiune",
-		resave: true,
+		resave: false,
 		saveUninitialized:false
 	}
-)); // crreaza campul session in request: req.session (req.session e acelasi obiect pentru toate cererile)
+)); 
 
 
-// -------------------- cereri de tip post----------------
-//<form method="post" action="/inreg"
 app.post('/inreg',function(req,res) {
   var dateForm=new formidable.IncomingForm()
 	dateForm.parse(req, function(err, fields, files){
-		//<input type="file" name="fis1" /> ----> files.fis1
-		//fields e pentru restul de inputuri <input name="ceva" ---> fields.ceva
-		var textJson=fs.readFileSync("useri.json","utf8"); //cale relativa la fisierul index.js
+		var textJson=fs.readFileSync("useri.json","utf8"); 
 		var obJson=JSON.parse(textJson);
 		var parolaCriptata;
 		var algoritmCriptare=crypto.createCipher("aes-128-cbc", "cheie_criptare")
@@ -46,11 +40,10 @@ app.post('/inreg',function(req,res) {
       parola: parolaCriptata,
       dataInreg: new Date(),
       rol: "user",
-      materii: fields.materii
+      branduri: fields.branduri
     }
 		obJson.useri.push(userNou);
 		obJson.lastId+=1;
-		//JSON.stringify opusul lui JSON.parse --->  din obiect imi face string
 		var jsonNou=JSON.stringify(obJson);
 		fs.writeFileSync("useri.json",jsonNou);
 		res.redirect("/");
@@ -62,9 +55,7 @@ app.post('/inreg',function(req,res) {
 app.post('/login',function(req,res) {
   var dateForm=new formidable.IncomingForm()
 	dateForm.parse(req, function(err, fields, files){
-		//<input type="file" name="fis1" /> ----> files.fis1
-		//fields e pentru restul de inputuri <input name="ceva" ---> fields.ceva
-		var textJson=fs.readFileSync("useri.json","utf8"); //cale relativa la fisierul index.js
+		var textJson=fs.readFileSync("useri.json","utf8");
 		var obJson=JSON.parse(textJson);
 		var parolaCriptata;
 		var algoritmCriptare=crypto.createCipher("aes-128-cbc", "cheie_criptare")
@@ -85,16 +76,10 @@ app.post('/login',function(req,res) {
 
 
 
-// -------------------- cereri de tip get----------------
-// cand se face o cerere get catre pagina de index 
 app.get('/', function(req, res) {
-	/*afiseaza(render) pagina folosind ejs (deoarece este setat ca view engine) */
-
-		// cond? val_if : val_else
 		var usrn=req.session ? (req.session.utilizator? req.session.utilizator.username : null) : null;
     res.render('html/index', {username: usrn});
 });
-//
 
 app.get('/logout', function(req, res) {
 	req.session.destroy();
@@ -102,7 +87,6 @@ app.get('/logout', function(req, res) {
 });
 
 app.get('/bla', function(req, res) {
-	/*afiseaza(render) pagina folosind ejs (deoarece este setat ca view engine) */
     console.log("ceva!");
 		res.setHeader("Content-Type", "text/html");
 		res.write("<html><body><h1>Cucubau!</h1><p>Bine, multumesc.</p></body></html>");
@@ -128,13 +112,8 @@ app.get('/*', function(req, res) {
 
 
 
-
-
-
-// tratarea erorii 404 se pune la final (aici o sa fie un caz general, pe care intra orice cerere). Daca s-a gasit mai sus, se opreste acolo; nu mai ajunge aici.*/
-
 app.use(function(req,res){
-	res.status(404).render("html/404");//din views/html/404.ejs
+	res.status(404).render("html/404");
 }); 
 
 
@@ -144,21 +123,3 @@ console.log('Aplicatia se va deschide pe portul 8080.');
 
 
 
-//aici facem slider-ul pt price range
-/*
-function creeazaLi(lista, val_text){
-	let li=document.createElement("li")
-	lista.appendChild(li);
-	li.innerHTML=val_text;
-}
-creeazaLi(ul_rez, "Input range: "+document.getElementById("i_range").value);
-
-//preluarea datelor din checkboxurile bifate
-var checkboxes=document.getElementsByName("gr_chck");		
-var sir="";
-for(let ch of checkboxes){
-    if(ch.checked)
-        sir+=ch.value+" ";
-}
-creeazaLi(ul_rez, "Inputurile checkbox: "+sir);
-*/

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "ro">
 <head> 
-	<title> Baschetball-ist.ro </title>
+	<title>  </title>
 	<meta charset="UTF-8">
 	<meta name = "Author" content = "Narcis">
 	<meta name = "description" content ="Magazin online de accesorii sportive de basket">
@@ -14,6 +14,7 @@
 
 </head>
 <body>
+    <%- include("../fragmente/Cerinte_Suplimentare_6")  %>
 	<%- include("../fragmente/header")  %><!--aici adaug header-ul-->
 	
 	
@@ -23,46 +24,13 @@
     </figure>
 	<br><br><br><br>
 
-	<div class="filtrare_produse"></br>
-		<p><b>Price Range</b></p>
-		<label for="i_range">
-			<input id="i_range" type="range" min="10" max="500" step="10">
-		</label>
-		</br>
-	
-		<p><b>Gen</b></p>
-			<label>
-				<input id="i_check1" name="gr_chck" value="1" type="checkbox"/>
-				Barbați
-			</label></br>
-			<label>
-				<input id="i_check2" name="gr_chck" value="2" type="checkbox"/>
-				Femei
-			</label>
-		</br></br>
-	
-		<p><b>Tipul produselor</b></p>
-		<input id="i_check3" name="gr_chck" value="3" type="checkbox"/>
-			Încălțăminte
-		</label></br>
-		<label>
-			<input id="i_check4" name="gr_chck" value="4" type="checkbox"/>
-			Jersey-uri
-		</label>
-		</br>
-		<label>
-			<input id="i_check5" name="gr_chck" value="5" type="checkbox"/>
-			Accesorii
-		</label>
-		</br></br>
-	
-		<p class = "sale"><b>Sale</b></p>
-		<label>
-			<input id="i_check4" name="gr_chck" value="6" type="checkbox"/>
-			Numai produsele reduse 
-		</label>
-		</br>
-	</div>
+	<div class="animatie_simpla">
+		<div id ="myAnimation"></div>
+</div>
+	<!--Aici gasim a 4-a cerinta nivel 3-1 animatie simpla , un ceas care arata live timpul folosind canvas-->
+	<%- include("../fragmente/Cerinte_Suplimentare_4")  %>
+	<!-------------------------------------------------------------->
+
 	
 	<div>
 		<div class = "text-introductiv">

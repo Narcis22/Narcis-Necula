@@ -1,0 +1,52 @@
+<div id = "change_color">
+    <p>Aici puteti introduce o culoare din lista celor aprobate si coloana din 
+        stanga isi va schimba culoarea actuala in cea introdusa!</br>Lista culorilor permise este:Gold, Blue, Yellow, Orange
+    , Pink, Red, DarkGreen, Green si Purple.</p>
+    <input type="text" id="subEmail" onchange="checkFilled();"/>
+</div>
+<script>
+function checkFilled() {
+    var inputVal = document.getElementById("subEmail");
+  var left_col = document.getElementById("stanga");
+    if (inputVal.value == "Gold" || inputVal.value == "gold" || inputVal.value == "#d1b02c") {
+        left_col.style.backgroundColor = "#d1b02c";
+    }
+    else
+    if(inputVal.value == "Blue" || inputVal.value == "blue"|| inputVal.value == "#247de3"){
+        left_col.style.backgroundColor = "#247de3";
+    }
+    
+    else
+    if(inputVal.value == "Yellow" || inputVal.value == "yellow"|| inputVal.value == "#ffff00"){
+        left_col.style.backgroundColor = "yellow";
+    }
+    else
+    if(inputVal.value == "Orange" || inputVal.value == "orange"|| inputVal.value == "#d94800"){
+        left_col.style.backgroundColor = "#d94800";
+    }
+    else
+    if(inputVal.value == "Pink" || inputVal.value == "pink"|| inputVal.value == "#d900d9"){
+        left_col.style.backgroundColor = "#d900d9";
+    }
+    else
+    if(inputVal.value == "Red" || inputVal.value == "red"|| inputVal.value == "#ff0000"){
+        left_col.style.backgroundColor = "red";
+    }
+    else
+    if(inputVal.value == "DarkGreen" || inputVal.value == "darkGreen" || inputVal.value == "Darkgreen" || inputVal.value == "darkgreen"|| inputVal.value == "#004a05"){
+        left_col.style.backgroundColor = "#004a05";
+    }
+    else
+    if(inputVal.value == "Green" || inputVal.value == "green"|| inputVal.value == "#11f020"){
+        left_col.style.backgroundColor = "#11f020";
+    }
+    else
+    if(inputVal.value == "Purple" || inputVal.value == "purple"|| inputVal.value == "#d900d9"){
+        left_col.style.backgroundColor = "#d900d9";
+    }
+    else{if(inputVal.value != ""){
+        alert("Culoarea introdusa nu este valida!");
+    }}
+}
+checkFilled();
+</script>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang = "ro">
+<html lang = "en">
 <head> 
-	<title> Baschetball-ist.ro </title>
+	<title>  </title>
 	<meta charset="UTF-8">
 	<meta name = "Author" content = "Narcis">
 	<meta name = "description" content ="Magazin online de accesorii sportive de basket">
@@ -11,21 +11,25 @@
 	<link rel="stylesheet" type="text/css" href="/CSS_pages/Main_Secundaries.css"/>
 	<link rel="stylesheet" type="text/css" href="/CSS_pages/Style.css"/>
 	<link rel="stylesheet" type="text/css" href="/CSS_pages/Media_queries.css"/>
-
+	<script src="js/ejs.min.js"></script>
+	<script src="js/script.js"></script> 
 </head>
-<body>
+<body class = "container">
+	
+    <%- include("../fragmente/Cerinte_Suplimentare_6")  %>
 	<%- include("../fragmente/header")  %><!--aici adaug header-ul-->
-
 <main>
-    <div class = "big_box">
-        <div class = "json_box">
-
-        </div>
-
-        <div class = "produse_box">
-
-        </div>
-    </div>
+	<h3>JSON</h3>
+	<div class = "afis">
+    <p id = "ajax_t1">Continut JSON</p>
+		<div class="afis" id="afisJson">
+			
+		</div>
+		
+    <p id = "ajax_t2">Cu template:</p>
+		<div class="afis" id="afisTemplate">
+    </div></div>
+    
 </main>
 
 <%- include("../fragmente/footer")  %><!--aici adaug footer-ul-->
