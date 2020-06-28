@@ -307,10 +307,36 @@ div#change_color{
 }
 
 .templ_produs{
-    border:1px solid grey;
+    border:2px solid green;
     padding:0.4em;
+    border-radius: 5px;
+    padding-bottom: 20px;
 }
 
 h3{
     font-size:30px;
+}
+
+.container_butoane{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    width:90vw;
+    padding-top:50px;
+    border
+}
+
+div#special{
+    display:grid;
+    background-color: teal;
+    border:2px solid green;
+    padding: 0.4em;
+    border-radius:5px;
+    padding:10px;
+}
+
+.stock{
+    display: flexbox;
+    width:70vw;
+    text-align:center;
+    background:red;
 }

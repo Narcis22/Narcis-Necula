@@ -29,7 +29,16 @@
     <p id = "ajax_t2">Cu template:</p>
 		<div class="afis" id="afisTemplate">
     </div></div>
-    
+    <div class = "container_butoane">
+	<button id="pret_crescator" onclick = "sortez_pret()">Pret crescator</button>
+	<button id="afis_reduceri" onclick = "afisare_reduceri()">Reduceri</button>
+	<button id="adidas_desc" onclick = "adidas_desc()">Adidas cu preturile descrescatoare</button>
+	<button id="reset" onclick = "calcul()">Calcul stoc total</button>
+	<button id="reset" onclick = "reset()">Reset</button>
+	<input type="text" id = "firma_dorita" name = "firma" value="Introdu producatorul" oninput = "brand()"/>
+	<label><input type="checkbox" id="myCheck" name="myCheck" onclick="inversez()">  Inverseaza dupa ID</label>
+
+	</div>
 </main>
 
 <%- include("../fragmente/footer")  %><!--aici adaug footer-ul-->

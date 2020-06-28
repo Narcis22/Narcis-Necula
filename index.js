@@ -40,7 +40,7 @@ app.post('/inreg',function(req,res) {
       parola: parolaCriptata,
       dataInreg: new Date(),
       rol: "user",
-      branduri: fields.branduri
+      balls: fields.balls
     }
 		obJson.useri.push(userNou);
 		obJson.lastId+=1;
